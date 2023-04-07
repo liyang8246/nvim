@@ -185,6 +185,11 @@ _G.packer_plugins = {
     path = "/home/LiYang/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-terminal-help"] = {
+    loaded = true,
+    path = "/home/LiYang/.local/share/nvim/site/pack/packer/start/vim-terminal-help",
+    url = "https://github.com/skywind3000/vim-terminal-help"
+  },
   ["vim-tmux-navigator"] = {
     loaded = true,
     path = "/home/LiYang/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
