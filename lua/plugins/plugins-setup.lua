@@ -23,7 +23,7 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-  use 'skywind3000/vim-terminal-help'
+  use 'liyang8246/vim-terminal-help'
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim' -- 主题
   use {

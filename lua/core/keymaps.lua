@@ -21,8 +21,6 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<C-L>", ":bnext<CR>")
 keymap.set("n", "<C-H>", ":bprevious<CR>")
 
---ter
-keymap.set("n", "<leader>t", "<M-=>")
 -- ---------- 插件 --------------
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")

@@ -188,7 +188,7 @@ _G.packer_plugins = {
   ["vim-terminal-help"] = {
     loaded = true,
     path = "/home/LiYang/.local/share/nvim/site/pack/packer/start/vim-terminal-help",
-    url = "https://github.com/skywind3000/vim-terminal-help"
+    url = "https://github.com/liyang8246/vim-terminal-help"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,
