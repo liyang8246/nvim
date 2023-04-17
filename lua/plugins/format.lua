@@ -1,19 +1,11 @@
-local present, null_ls = pcall(require, "null-ls")
+local null_ls = require("null-ls")
+local formatting = null_ls.builtins.formatting
 
-if not present then
-   return
-end
 
-local b = null_ls.builtins
-
---custom.plugins.null-ls.lua
-
-local sources = {
-
-  b.formatting.clang_format,
-}
-
-null_ls.setup {
-   debug = true,
-   sources = sources,
-}
+null_ls.setup({
+  sources = {
+    formatting.clang_format.with({extra_args = {"-style=WebKit"}}),
+    formatting.black,
+    formatting.rustfmt,
+  },
+})
