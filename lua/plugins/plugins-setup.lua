@@ -23,7 +23,10 @@ vim.cmd([[
 ]])
 
 return require('packer').startup(function(use)
-  use 'liyang8246/vim-terminal-help'
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use {'akinsho/toggleterm.nvim', tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim' -- 主题
   use {

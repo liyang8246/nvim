@@ -17,7 +17,7 @@ npairs.setup {
     keys = 'qwertyuiopzxcvbnmasdfghjkl',
     check_comma = true,
     highlight = 'Search',
-    highlight_grey='Comment'
+    highlight_grey = 'Comment'
   },
 }
 
