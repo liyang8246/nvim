@@ -11,7 +11,7 @@ require("mason").setup({
 require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
   ensure_installed = {
-    "lua_ls",
+    "lua_ls","clangd","pyright",
   },
 })
 
@@ -19,4 +19,14 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 require("lspconfig").lua_ls.setup {
   capabilities = capabilities,
+}
+
+require("lspconfig").clangd.setup {
+  cmd = {
+    "clangd",
+    "--header-insertion=never",
+    "--query-driver=/opt/homebrew/opt/llvm/bin/clang",
+    "--all-scopes-completion",
+    "--completion-style=detailed",
+  }
 }
