@@ -4,7 +4,7 @@ local formatting = null_ls.builtins.formatting
 
 null_ls.setup({
   sources = {
-    formatting.clang_format.with({extra_args = {"-style=WebKit"}}),
+    formatting.clang_format.with({extra_args = {"--style","{BasedOnStyle: Google, IndentWidth: 4}"}}),
     formatting.black,
     formatting.rustfmt,
   },
