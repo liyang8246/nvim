@@ -30,3 +30,6 @@ keymap.set("n", "<leader>q", ":q<CR>")
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- null-ls
 keymap.set("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>")
+--toggleterm
+keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
+keymap.set("t", "<leader>t", "exit<CR>")
