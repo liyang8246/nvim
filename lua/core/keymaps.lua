@@ -4,6 +4,7 @@ local keymap = vim.keymap
 
 -- ---------- 插入模式 ---------- ---
 keymap.set("i", "jk", "<ESC>")
+keymap.set("i", "kj", "<ESC>")
 
 -- ---------- 视觉模式 ---------- ---
 -- 单行或多行移动
@@ -21,13 +22,9 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<leader>l", ":bnext<CR>")
 keymap.set("n", "<leader>h", ":bprevious<CR>")
 
--- 保存文件,退出文件
-keymap.set("n", "<leader>w", ":w<CR>")
-keymap.set("n", "<leader>q", ":q<CR>")
-
 -- ---------- 插件 --------------
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>")
 -- null-ls
 keymap.set("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>")
 --toggleterm
