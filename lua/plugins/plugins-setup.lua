@@ -24,6 +24,13 @@ vim.cmd([[
 
 return require('packer').startup(function(use)
     use {
+        "ggandor/leap.nvim",
+        require = "repeat.vim",
+        config = function()
+            require("leap").set_default_keymaps()
+        end,
+    }
+    use {
         "folke/trouble.nvim",
         requires = "nvim-tree/nvim-web-devicons",
         config = function()

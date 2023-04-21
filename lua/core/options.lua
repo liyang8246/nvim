@@ -6,6 +6,7 @@ opt.timeoutlen = 512
 -- 行号
 opt.relativenumber = true
 opt.number = true
+opt.scrolloff = 5
 
 -- 缩进
 opt.tabstop = 4

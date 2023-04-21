@@ -30,3 +30,12 @@ keymap.set("n", "<leader>f", ":lua vim.lsp.buf.format()<CR>")
 --toggleterm
 keymap.set("n", "<leader>t", ":ToggleTerm<CR>")
 keymap.set("t", "<leader>t", "exit<CR>")
+--Trouble
+keymap.set("n", "<leader>i", ":TroubleToggle<CR>")
+--leap
+keymap.set("n", "s", function ()
+  local current_window = vim.fn.win_getid()
+  require('leap').leap { target_windows = { current_window } }
+end)
+--tele
+keymap.set("n", "<leader>ff" ,":Telescope fd<CR>")
