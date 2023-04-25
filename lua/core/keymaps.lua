@@ -38,4 +38,4 @@ keymap.set("n", "s", function ()
   require('leap').leap { target_windows = { current_window } }
 end)
 --tele
-keymap.set("n", "<leader>ff" ,":Telescope fd<CR>")
+-- keymap.set("n", "<leader>ff" ,":Telescope fd<CR>")
