@@ -11,7 +11,7 @@ require("mason").setup({
 require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
   ensure_installed = {
-    "lua_ls","pyright",
+    "lua_ls",
   },
 })
 
@@ -30,4 +30,8 @@ require("lspconfig").clangd.setup {
     "--completion-style=detailed",
     "--offset-encoding=utf-16",
   }
+}
+
+require("lspconfig").rust_analyzer.setup {
+  cmd = {"rust-analyzer"}
 }
